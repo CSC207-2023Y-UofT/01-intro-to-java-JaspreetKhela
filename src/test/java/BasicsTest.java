@@ -39,7 +39,7 @@ public class BasicsTest {
         String[] output = getMainOutput();
 
         // assertion
-        assertEquals("Hello World!", output[1].strip());
+        assertEquals("Hello World!", output[1].trim());
     }
 
     @Test(timeout = 50)
@@ -47,7 +47,7 @@ public class BasicsTest {
         String[] output = getMainOutput();
 
         // assertion
-        assertEquals("my_variable's value is 100", output[2].strip());
+        assertEquals("my_variable's value is 100", output[2].trim());
     }
 
     @Test(timeout = 50)
@@ -56,7 +56,7 @@ public class BasicsTest {
 
         // assertion
         for (int i = 10; i >= 0; i--) {
-            assertEquals("Current count: " + i, output[3 + (10 - i)].strip());
+            assertEquals("Current count: " + i, output[3 + (10 - i)].trim());
         }
     }
 
