@@ -99,10 +99,10 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for (int i = 10; i >= 0; i--){
+        for (int i = 10; i >= 0; i--) {
             System.out.println("Current count: " + i);
         }
-
+    }
     /**
      *  6. Below is a method named split which returns a String,
      *    as indicated by the 'String' part of the header. It takes one
@@ -143,7 +143,7 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
-        String[] words = to_split.split();
+        String[] words = to_split.split("");
 
         for (String word: words) {
             ret.append(word.charAt(0));
